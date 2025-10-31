@@ -1,0 +1,117 @@
+
+:root{
+  --bg:#f0f4f8;       
+  --card:#ffffff;     
+  --muted:#64748b;    
+  --accent:#1e3a8a;   
+  --accent-light:#3b82f6; 
+  --maxw:860px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color:#1e293b;
+  padding:24px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  background:rgba(255,255,255,0.95); 
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 8px 24px rgba(30,58,138,0.2);
+  border:1px solid rgba(255,255,255,0.3);
+}
+
+
+.header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  border-bottom:2px solid var(--accent);
+  padding-bottom:18px;
+  margin-bottom:18px;
+}
+.photo img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:8px;
+  border:3px solid var(--accent-light);
+}
+.intro h1{
+  margin:0 0 6px 0;
+  font-size:24px;
+  color:var(--accent);
+}
+.role{
+  margin:0 0 6px 0;
+  color:var(--accent-light);
+  font-weight:600;
+}
+.contact{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+
+.section{
+  margin-top:18px;
+}
+.section h2{
+  margin:0 0 10px 0;
+  font-size:18px;
+  color:var(--accent);
+  border-left:4px solid var(--accent-light);
+  padding-left:8px;
+}
+.section p, .section ul, .section .project{
+  margin:6px 0 0 0;
+  line-height:1.6;
+  color:#334155;
+}
+.skills ul, .education ul, .certifications ul{
+  padding-left:20px;
+}
+.small{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Project card */
+.project{
+  padding:12px 14px;
+  background:#f8fafc;
+  border:1px solid #cbd5e1;
+  border-left:4px solid var(--accent-light);
+  border-radius:8px;
+  margin-bottom:10px;
+  transition:all .2s ease;
+}
+.project:hover{
+  background:#e0f2fe;
+  border-color:var(--accent-light);
+}
+
+
+.footer{
+  margin-top:20px;
+  padding-top:12px;
+  border-top:1px dashed #cbd5e1;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
+
+
+@media (max-width:600px){
+  .header{flex-direction:column; align-items:flex-start}
+  .photo img{width:90px;height:90px}
+}

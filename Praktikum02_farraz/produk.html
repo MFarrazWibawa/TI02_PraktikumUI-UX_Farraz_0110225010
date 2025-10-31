@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran Produk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="produk.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">hewan.com</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Register</a>
+      <a href="#">Policy</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="product-img">
+      <img src="masrud.jpeg" alt="Produk">
+    </div>
+
+    <form>
+      <label>Title Here :</label>
+      <input type="text" value="Musang Premium Rp 85.000">
+
+      <label>Description :</label>
+      <input type="text" value="Jinak, sehat, cocok untuk peliharaan.">
+
+      <label>Total Amount :</label>
+      <input type="text" value="Rp 85.000">
+
+      <label>Pay to :</label>
+      <input type="text" value="123-456-789-0">
+
+      <label>Payment Type :</label>
+      <select>
+        <option>Visa Debit</option>
+        <option>MasterCard</option>
+        <option>Gopay</option>
+        <option>Bank Transfer</option>
+      </select>
+
+      <label>Account Holder :</label>
+      <input type="text" placeholder="Nama Pemilik Rekening">
+
+      <label>Account No :</label>
+      <input type="text" placeholder="Nomor Rekening">
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" checked> Send to Mobile Phone</label>
+        <label><input type="checkbox" checked> Email me a copy of transaction</label>
+      </div>
+
+      <label>Send to Mobile Phone :</label>
+      <input type="text" placeholder="08xxxxxxxxxx">
+
+      <label>Send to Email :</label>
+      <input type="email" placeholder="example@email.com">
+
+      <button type="submit">Pay using QuickLink</button>
+    </form>
+  </main>
+</body>
+</html>

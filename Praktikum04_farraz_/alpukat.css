@@ -1,0 +1,72 @@
+body {
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+h1 {
+    text-align: center;
+
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.foto1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+}
+.foto {
+    display: flex;
+    background-color: black;
+    padding-left: 12px;
+    padding-right: 0;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+
+    & img {
+        width: 305px;
+    }
+}
+.promo {
+    color: greenyellow;
+    text-align: center;
+}
+.cod {
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: greenyellow;
+    color: darkgreen;
+    border-radius: 10px;
+    padding: 10px 15px;
+
+    & p {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+#tombol {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: greenyellow;
+    color : darkgreen;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+}
