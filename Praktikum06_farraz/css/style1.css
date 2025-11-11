@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+img {
+    width: 5%;
+}
+
+nav {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 40px;
+    background-color: aqua;
+}
+
+nav li {
+    padding: 10px;
+}
